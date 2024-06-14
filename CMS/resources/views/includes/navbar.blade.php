@@ -1,5 +1,5 @@
 <style>
- /* Style The Dropdown Button */
+    /* Style The Dropdown Button */
     .dropbtn {
         cursor: pointer;
     }
@@ -27,8 +27,9 @@
         text-decoration: none;
         display: block;
     }
+
     .drop-content a:hover {
-        background:#ededed;
+        background: #ededed;
     }
 </style>
 <nav class="Polaris-ShadowBevel" style="z-index: 1000; --pc-shadow-bevel-z-index: 32;--pc-shadow-bevel-box-shadow-xs: var(--p-shadow-100);">
@@ -37,12 +38,12 @@
             <ul style="display: flex; padding:6px; justify-content: center; margin:0;">
                 <li>
                     <a class="a" style="text-decoration: none; color: black;" href="{{Route('home')}}">
-                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=24&id=ETI89AT9Xeqo&format=png" width="19" height="19" alt="Home icon" class="loaded"> App Instruction</a>
+                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=80&id=4inu0yHcBPi2&format=png" width="19" height="19" alt="Home icon" class="loaded"> Dashboard</a>
                 </li>
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn  Polaris-Button Polaris-Button--sizeSmall Polaris-Button--textAlignCenter">
-                    <img style="vertical-align: middle;" src="https://img.icons8.com/?size=24&id=OKXXNn38cTcC&format=png" width="17" height="17" alt="Home icon" class="loaded">
+                            <img style="vertical-align: middle;" src="https://img.icons8.com/?size=24&id=OKXXNn38cTcC&format=png" width="17" height="17" alt="Home icon" class="loaded">
                             Message</button>
                         <div class="drop-content" style="z-index: 1000; position: fixed; width: 10%;">
                             <a href="#">Admin</a>
@@ -63,8 +64,8 @@
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn Polaris-Button Polaris-Button--sizeSmall Polaris-Button--textAlignCenter">
-                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=100&id=lUAhXJeo12PL&format=png&color=000000" width="17" height="17" alt="Home icon" class="loaded">
-                        Abandoned Cart</button>
+                            <img style="vertical-align: middle;" src="https://img.icons8.com/?size=100&id=lUAhXJeo12PL&format=png&color=000000" width="17" height="17" alt="Home icon" class="loaded">
+                            Abandoned Cart</button>
                         <div class="drop-content" style="z-index: 1000; position: fixed; width: 10%;">
                             <a href="#">Abandoned Orders</a>
                             <a href="#">Discount Codes</a>
@@ -85,8 +86,8 @@
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn  Polaris-Button Polaris-Button--sizeSmall Polaris-Button--textAlignCenter">
-                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=30&id=59996&format=png" width="17" height="17" alt="Home icon" class="loaded">
-                        Settings</button>
+                            <img style="vertical-align: middle;" src="https://img.icons8.com/?size=30&id=59996&format=png" width="17" height="17" alt="Home icon" class="loaded">
+                            Settings</button>
                         <div class="drop-content" style="z-index: 1000; position: fixed; width: 10%;">
                             <a href="#">API Configuration</a>
                             <a href="#">App Setting</a>
