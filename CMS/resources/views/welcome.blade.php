@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>App Instruction</title>
+    <title>Dashboard</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @include("includes.head-link")
@@ -59,7 +59,42 @@
                 </div>
             </div>
             <div class="Polaris-LegacyCard" style="padding: 20px; display: flex; justify-content: center;">
-                <div style="width: 90%;">
+                <div style="width: 95%;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <h5 class="Polaris-Text--root Polaris-Text--headingLg" style="margin-bottom: var(--p-space-200);">Simple Column Chart with Index Labels</h5>
+                        </div>
+                        <div style="margin-bottom: var(--p-space-200);">
+                            <!-- <label style="padding:4px 0;" id=":R4q6:Label" for=":R4q6:" class="Polaris-Label__Text">
+                                <span class="Polaris-Text--root Polaris-Text--bodyMd">Status</span>
+                            </label> -->
+                            <div class="Polaris-Select">
+                                <select id="re-attampt" name="reattampt" class="Polaris-Select__Input" aria-invalid="false">
+                                    <option selected value="">All</option>
+                                    <option value="">Close Tickets</option>
+                                    <option value="">Open Tickets</option>
+                                    <option value="">Completed</option>
+                                </select>
+                                <div class="Polaris-Select__Content" aria-hidden="true">
+                                    <span class="Polaris-Select__SelectedOption">All</span>
+                                    <span class="Polaris-Select__Icon">
+                                        <span class="Polaris-Icon">
+                                            <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                            </span>
+                                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                <path d="M10.884 4.323a1.25 1.25 0 0 0-1.768 0l-2.646 2.647a.75.75 0 0 0 1.06 1.06l2.47-2.47 2.47 2.47a.75.75 0 1 0 1.06-1.06l-2.646-2.647Z">
+                                                </path>
+                                                <path d="m13.53 13.03-2.646 2.647a1.25 1.25 0 0 1-1.768 0l-2.646-2.647a.75.75 0 0 1 1.06-1.06l2.47 2.47 2.47-2.47a.75.75 0 0 1 1.06 1.06Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="Polaris-Select__Backdrop">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                 </div>
             </div>
@@ -69,30 +104,34 @@
 
 <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 <script>
-$(document).ready(function () {
+    $(document).ready(function() {
+        $('.Polaris-Select__Input').each(function(index) {
+            const selectedOption = $(this).closest('.Polaris-Select').find('.Polaris-Select__SelectedOption');
+            $(this).change(function() {
+                selectedOption.text($(this).find('option:selected').text());
+            });
+        });
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            exportEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            // title: {
+            //     text: "Simple Column Chart with Index Labels"
+            // },
+            axisY: {
+                includeZero: true
+            },
+            data: [{
+                type: "column", //change type to bar, line, area, pie, etc
+                // indexLabel: "{y}", //Shows y value on all Data Points
+                indexLabelFontColor: "#5A5757",
+                indexLabelPlacement: "outside",
+                dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+            }]
+        });
+        chart.render();
 
-var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    exportEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
-    title: {
-        text: "Simple Column Chart with Index Labels"
-    },
-    axisY: {
-        includeZero: true
-    },
-    data: [{
-        type: "column", //change type to bar, line, area, pie, etc
-        // indexLabel: "{y}", //Shows y value on all Data Points
-        indexLabelFontColor: "#5A5757",
-        indexLabelPlacement: "outside",   
-        dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-    }]
-});
-chart.render();
-
-});
-
+    });
 </script>
 
 </html>

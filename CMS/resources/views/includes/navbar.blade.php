@@ -41,42 +41,18 @@
                         <img style="vertical-align: middle;" src="https://img.icons8.com/?size=80&id=4inu0yHcBPi2&format=png" width="19" height="19" alt="Home icon" class="loaded"> Dashboard</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn  Polaris-Button Polaris-Button--sizeSmall Polaris-Button--textAlignCenter">
-                            <img style="vertical-align: middle;" src="https://img.icons8.com/?size=24&id=OKXXNn38cTcC&format=png" width="17" height="17" alt="Home icon" class="loaded">
-                            Message</button>
-                        <div class="drop-content" style="z-index: 1000; position: fixed; width: 10%;">
-                            <a href="#">Admin</a>
-                            <a href="#">Customer</a>
-                        </div>
-                    </div>
-                </li>
-                <!-- <div class="Polaris-Backdrop"></div> -->
-                <li>
-                    <a class="a" style="text-decoration: none; color: black;" href="#">
-                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=24&id=G0QpPvSgtsFN&format=png" width="19" height="19" alt="Home icon" class="loaded"> Order Verification</a>
+                    <a class="a" style="text-decoration: none; color: black;" href="{{Route('guide')}}">
+                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=24&id=ETI89AT9Xeqo&format=png" width="19" height="19" alt="Home icon" class="loaded"> App Instruction</a>
                 </li>
                 <li>
-                    <a class="a" style="text-decoration: none; color: black;" href="#">
-                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=100&id=9VUapBpADpGE&format=png&color=000000" width="17" height="17" alt="Home icon" class="loaded">
-                        Bulk SMS</a>
+                    <a class="a" style="text-decoration: none; color: black;" href="{{Route('AddStaff')}}">
+                        <img style="vertical-align: top;" src="https://img.icons8.com/?size=80&id=112560&format=png" width="17" height="17" alt="Home icon" class="loaded">
+                        Add Staff</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn Polaris-Button Polaris-Button--sizeSmall Polaris-Button--textAlignCenter">
-                            <img style="vertical-align: middle;" src="https://img.icons8.com/?size=100&id=lUAhXJeo12PL&format=png&color=000000" width="17" height="17" alt="Home icon" class="loaded">
-                            Abandoned Cart</button>
-                        <div class="drop-content" style="z-index: 1000; position: fixed; width: 10%;">
-                            <a href="#">Abandoned Orders</a>
-                            <a href="#">Discount Codes</a>
-                            <a href="#">Message Setting</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a class="a" style="text-decoration: none; color: black;" href="#">
-                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=77&id=UWsL0In9hUI3&format=png" width="17" height="17" alt="Home icon" class="loaded">
-                        Orders</a>
+                    <a class="a" style="text-decoration: none; color: black;" href="{{Route('Inbox')}}">
+                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=30&id=4k4CK3sgG-x7&format=png" width="17" height="17" alt="Home icon" class="loaded">
+                        Inbox</a>
                 </li>
                 <li>
                     <a class="a" style="text-decoration: none; color: black;" href="#">
@@ -101,10 +77,10 @@
 <script>
     $(document).ready(function() {
         var currentPath = window.location.pathname;
-        var currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+        var currentFile = currentPath.substring(currentPath.lastIndexOf('/'));
         // console.log(currentFile);
         $('nav li a').each(function() {
-            var hrefFile = $(this).attr('href').substring($(this).attr('href').lastIndexOf('/') + 1);
+            var hrefFile = $(this).attr('href').substring($(this).attr('href').lastIndexOf('/'));
             if (hrefFile === currentFile) {
                 $(this).parent('li').addClass('active');
             }
