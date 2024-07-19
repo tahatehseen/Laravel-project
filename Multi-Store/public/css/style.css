@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(116, 114, 114, 0.699);
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  max-height: 585px !important;
+  max-width: 1358px;
+  border-right: 1px solid black;
+}
+
+/* Navbar CSS */
+nav ul li {
+  padding: 0px var(--p-space-300);
+  padding-top: 4px;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: rgb(236, 236, 236);
+}
+
+nav ul li:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+@media screen and (max-width: 980px) {
+  ul li {
+    padding: 3px 6px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  ul li {
+    padding: 3px 3px;
+  }
+}
+/* end navbar css  */
+/* notification-popup css */
+.notification {
+  position: fixed;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  background-color: #00000083;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: 16px;
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+  opacity: 1;
+}
+/*end notification-popup css */
+/*toggle button css*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 23px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:var(--p-color-bg-fill-brand);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--p-color-bg-fill-brand);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+  width: 15px;
+  height: 15px;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 38%;
+  width: 15px;
+  height:15px ;
+}
+/*end toggle button css*/

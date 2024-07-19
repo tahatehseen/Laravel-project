@@ -263,6 +263,7 @@
 
     function updateCheckedValuesInput(id, tag) {
         var checkedIds = Object.keys(checkedValues[id] || {});
+        console.log(checkedIds);
         $("#" + id).val(checkedIds.join(',')); // Join IDs into comma-separated string
 
         // Update tags display
@@ -300,6 +301,7 @@
             var $dropdownContent = $(this).closest(".dropdown-content");
             var val = $dropdownContent.data("val");
             var data_id = $dropdownContent.data("tag");
+            console.log(val+" - "+data_id);
             var selectAll = $dropdownContent.data("select-all");
             var value = $(this).val();
             var title = $(this).closest('label').text().trim();
