@@ -1,0 +1,93 @@
+
+/*# sourceMappingURL=custom.min.css.map */
+/* color radio */
+.red-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 12px;
+    border: 2px solid red;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .red-radio:checked {
+    background-color: red;
+  }
+  .green-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 12px;
+    border: 2px solid yellowgreen;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .green-radio:checked {
+    background-color: yellowgreen;
+  }
+  .dark-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 12px;
+    border: 2px solid #b5b5b5;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .dark-radio:checked {
+    background-color: #b5b5b5;
+  }
+  .orange-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 12px;
+    border: 2px solid #ff9d2c;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .orange-radio:checked {
+    background-color: #ff9d2c;
+  }
+  .blue-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 12px;
+    border: 2px solid #1d92ff;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .blue-radio:checked {
+    background-color: #1d92ff;
+  }
+  .yellow-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 12px;
+    border: 2px solid #fccc48;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .yellow-radio:checked {
+    background-color: #fccc48;
+  }
