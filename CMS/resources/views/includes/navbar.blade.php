@@ -32,7 +32,7 @@
         background: #ededed;
     }
 </style>
-<nav class="Polaris-ShadowBevel" style="z-index: 1000; --pc-shadow-bevel-z-index: 32;--pc-shadow-bevel-box-shadow-xs: var(--p-shadow-100);">
+<nav class="Polaris-ShadowBevel" style="z-index: 515; --pc-shadow-bevel-z-index: 32;--pc-shadow-bevel-box-shadow-xs: var(--p-shadow-100);">
     <div class="Polaris-Box" style="--pc-box-background:var(--p-color-bg-surface);--pc-box-min-height:100%;vertical-align: middle;">
         <div class="mob-center ">
             <ul style="display: flex; padding:6px; justify-content: center; margin:0;">
@@ -60,16 +60,20 @@
                         Plans</a>
                 </li>
                 <li>
+                    <a class="a" style="text-decoration: none; color: black;" href="{{route('settings')}}">
+                        <img style="vertical-align: middle;" src="https://img.icons8.com/?size=30&id=59996&format=png" width="17" height="17" alt="Home icon" class="loaded">
+                        Settings</a>
+                </li>
+                <!-- <li>
                     <div class="dropdown">
                         <button class="dropbtn  Polaris-Button Polaris-Button--sizeSmall Polaris-Button--textAlignCenter">
-                            <img style="vertical-align: middle;" src="https://img.icons8.com/?size=30&id=59996&format=png" width="17" height="17" alt="Home icon" class="loaded">
-                            Settings</button>
+                            </button>
                         <div class="drop-content" style="z-index: 1000; position: fixed; width: 10%;">
                             <a href="#">API Configuration</a>
                             <a href="#">App Setting</a>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>

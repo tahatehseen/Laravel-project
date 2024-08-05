@@ -92,123 +92,133 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                                    <h6 class="border-bottom pb-2">SMS Setting</h6>
-                                                    <div>
-                                                        <div class="mb-2">
-                                                            <label for="email1">Email</label>
-                                                            <input id="email1" type="text" class="form-control" placeholder="Email">
-                                                        </div>
-                                                        <div class="mb-2">
-                                                            <label for="apikey1">API Key:</label>
-                                                            <input id="apikey1" type="text" class="form-control" placeholder="API Key">
-                                                        </div class="mb-2">
-                                                        <div class="mb-2">
-                                                            <label for="mask1">Mask:</label>
-                                                            <input id="mask1" type="text" class="form-control" placeholder="Mask">
-                                                        </div>
-                                                        <div class="mb-2">
-                                                            <label for="deviceId">Device ID:</label>
-                                                            <input id="deviceId" type="text" class="form-control" placeholder="Device ID">
-                                                        </div>
-                                                        <div class="mb-2">
-                                                            <label for="methood">Method</label>
-                                                            <select class="form-select" name="" id="methood">
-                                                                <option selected value="">Select Method</option>
-                                                                <option value="">WhatsApp</option>
-                                                                <option value="">SMS</option>
-                                                                <option value="">WhatsApp + SMS</option>
-                                                            </select>
+                                    <form>
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                                        <h6 class="border-bottom pb-2">SMS Setting</h6>
+                                                        <div>
+                                                            <div class="mb-2">
+                                                                <label for="email1">Email</label>
+                                                                <input id="email1" type="text" class="form-control" placeholder="Email">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="apikey1">API Key:</label>
+                                                                <input id="apikey1" type="text" class="form-control" placeholder="API Key">
+                                                            </div class="mb-2">
+                                                            <div class="mb-2">
+                                                                <label for="mask1">Mask:</label>
+                                                                <input id="mask1" type="text" class="form-control" placeholder="Mask">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="deviceId">Device ID:</label>
+                                                                <input id="deviceId" type="text" class="form-control" placeholder="Device ID">
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="methood">Method</label>
+                                                                <select class="form-select" name="" id="methood">
+                                                                    <option selected value="">Select Method</option>
+                                                                    <option value="">WhatsApp</option>
+                                                                    <option value="">SMS</option>
+                                                                    <option value="">WhatsApp + SMS</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                                    <h6 class="border-bottom pb-2">Advanced Setting</h6>
-                                                    <div class="mx-4">
-                                                        <div class="mb-2">
-                                                            <label for="sendSms">Send SMS</label>
-                                                            <select class="form-select" name="" id="sendSms">
-                                                                <option selected value="">Enable</option>
-                                                                <option value="">Disable</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-2 mt-3">
-                                                            <a href="{{route('smslogs')}}" class="btn btn-sm btn-dark rounded-3 px-4">Manage SMS Templates</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                                    <h6 class="border-bottom pb-2">Email Setting</h6>
-                                                    <div>
-                                                        <div class="d-flex">
-                                                            <div class="mb-2 form-check mx-3">
-                                                                <label for="default">Default Email Server</label>
-                                                                <input type="radio" class="form-check-input" name="email" id="default" checked>
-                                                            </div>
-                                                            <div class="mb-2 form-check mx-3">
-                                                                <label for="custom">Custom SMTP</label>
-                                                                <input type="radio" class="form-check-input" name="email" id="custom">
-                                                            </div>
-                                                        </div>
-                                                        <div id="customDiv" style="display: none;">
+                                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                                        <h6 class="border-bottom pb-2">Advanced Setting</h6>
+                                                        <div class="mx-4">
                                                             <div class="mb-2">
-                                                                <label for="host">Host:</label>
-                                                                <input id="host" type="text" class="form-control" placeholder="Host">
+                                                                <label for="sendSms">Send SMS</label>
+                                                                <select class="form-select" name="" id="sendSms">
+                                                                    <option selected value="">Enable</option>
+                                                                    <option value="">Disable</option>
+                                                                </select>
                                                             </div>
-                                                            <div class="mb-2">
-                                                                <label for="port">Port:</label>
-                                                                <input id="port" type="text" class="form-control" placeholder="Port">
+                                                            <div class="mb-2 mt-3">
+                                                                <a href="{{route('smslogs')}}" class="btn btn-sm btn-dark rounded-3 px-4">Manage SMS Templates</a>
                                                             </div>
-                                                            <div class="mb-2">
-                                                                <label for="password">Password:</label>
-                                                                <input id="password" type="password" class="form-control" placeholder="PassWord">
-                                                            </div>
-                                                            <div class="mb-2">
-                                                                <label for="email2">Email:</label>
-                                                                <input id="email2" type="email" class="form-control" placeholder="Email">
-                                                            </div>
-                                                            <div class="mb-2">
-                                                                <label for="from">From:</label>
-                                                                <input id="from" type="email" class="form-control" placeholder="From">
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-2">
-                                                            <label for="title">Title:</label>
-                                                            <input id="title" type="text" class="form-control" placeholder="Title">
-                                                        </div>
-                                                        <div class="mb-2">
-                                                            <label for="replyTo">Reply To:</label>
-                                                            <input id="replyTo" type="text" class="form-control" placeholder="Reply To">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                                    <h6 class="border-bottom pb-2">Advanced Setting</h6>
-                                                    <div class="mx-4">
-                                                        <div class="mb-2">
-                                                            <label for="sendEmail">Send email</label>
-                                                            <select class="form-select" name="" id="sendEmail">
-                                                                <option selected value="">Enable</option>
-                                                                <option value="">Disable</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-2 mt-3">
-                                                            <a href="{{route('smslogs')}}" class="btn btn-sm btn-dark rounded-3 px-4">Manage Email Templates</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="d-flex justify-content-end mb-2">
+                                            <button type="submit" class="btn btn-dark btn-sm px-3">save</button>
+                                        </div>
+                                    </form>
+                                    <form id="myForm">
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                                        <h6 class="border-bottom pb-2">Email Setting</h6>
+                                                        <div>
+                                                            <div class="d-flex">
+                                                                <div class="mb-2 form-check mx-3">
+                                                                    <label for="default">Default Email Server</label>
+                                                                    <input type="radio" class="form-check-input" name="email" id="default" checked>
+                                                                </div>
+                                                                <div class="mb-2 form-check mx-3">
+                                                                    <label for="custom">Custom SMTP</label>
+                                                                    <input type="radio" class="form-check-input" name="email" id="custom">
+                                                                </div>
+                                                            </div>
+                                                            <div id="customDiv" style="display: none;">
+                                                                <div class="mb-2">
+                                                                    <label for="host">Host:</label>
+                                                                    <input id="host" type="text" class="form-control" placeholder="Host" required>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <label for="port">Port:</label>
+                                                                    <input id="port" type="text" class="form-control" placeholder="Port" required>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <label for="password">Password:</label>
+                                                                    <input id="password" type="password" class="form-control" placeholder="PassWord" required>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <label for="email2">Email:</label>
+                                                                    <input id="email2" type="email" class="form-control" placeholder="Email" required>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <label for="from">From:</label>
+                                                                    <input id="from" type="email" class="form-control" placeholder="From" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="title">Title:</label>
+                                                                <input id="title" type="text" class="form-control" placeholder="Title" required>
+                                                            </div>
+                                                            <div class="mb-2">
+                                                                <label for="replyTo">Reply To:</label>
+                                                                <input id="replyTo" type="text" class="form-control" placeholder="Reply To" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                                        <h6 class="border-bottom pb-2">Advanced Setting</h6>
+                                                        <div class="mx-4">
+                                                            <div class="mb-2">
+                                                                <label for="sendEmail">Send email</label>
+                                                                <select class="form-select" name="" id="sendEmail">
+                                                                    <option selected value="">Enable</option>
+                                                                    <option value="">Disable</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-2 mt-3">
+                                                                <a href="{{route('emaillogs')}}" class="btn btn-sm btn-dark rounded-3 px-4">Manage Email Templates</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end mb-2">
+                                            <button type="submit" class="btn btn-dark btn-sm px-3">save</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div> <!-- end .h-100-->
@@ -257,6 +267,28 @@
                 $('#customDiv').stop(true, true).slideUp();
             }
         });
+
+        function updateRequiredAttribute() {
+            if ($('#customDiv').css('display') === 'none') {
+                $('#customDiv input').removeAttr('required');
+            } else {
+                $('#customDiv input').attr('required', 'required');
+            }
+        }
+
+        // Initial check
+        updateRequiredAttribute();
+
+        // Form submit event to update required attributes before submission
+        $('#myForm').submit(function() {
+            updateRequiredAttribute();
+            // Allow form to submit
+            return true;
+        });
+
+        $('#custom').on('click', function(){
+            $('#customDiv input').attr('required',true)
+        })
     });
 
     function PreviewImage() {

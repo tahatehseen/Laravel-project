@@ -24,3 +24,7 @@ Route::get('Inbox', function () {
 Route::get('ChatSupport', function () {
     return view('chat');
 })->name("ChatSupport");
+
+Route::get('settings', function () {
+    return view('settings');
+})->name("settings");

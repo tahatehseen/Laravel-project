@@ -214,128 +214,6 @@
                     </div>
                 </div>
             </div>
-            <!-- edit div -->
-            <div id="edit-div" style="display: none;">
-                <div class="Polaris-LegacyCard" style="overflow: visible; margin-top: var(--p-space-100);">
-                    <div style="padding: var(--p-space-400);">
-                        <!-- row 1 -->
-                        <div class="Polaris-Page__Content">
-                            <div class="Polaris-Grid">
-                                <div class="Polaris-Grid-Cell Polaris-Grid-Cell--cell_6ColumnXs Polaris-Grid-Cell--cell_3ColumnSm Polaris-Grid-Cell--cell_3ColumnMd Polaris-Grid-Cell--cell_6ColumnLg Polaris-Grid-Cell--cell_6ColumnXl">
-                                    <div>
-                                        <label for="title">Product Title</label>
-                                        <div class="Polaris-TextField Polaris-Button--pressable">
-                                            <input id="title" class="Polaris-TextField__Input" readonly value="Adventure Awaits T-Shirt" type="text" placeholder="Product Title">
-                                            <div class="Polaris-TextField__Backdrop"></div>
-                                        </div>
-                                    </div>
-                                    <div style="margin-top: var(--p-space-100);">
-                                        <label for="description">Product Description</label>
-                                        <div class="Polaris-TextField Polaris-Button--pressable">
-                                            <textarea id="description" rows="5" class="Polaris-TextField__Input" type="text" placeholder="Product Description" readonly>Embrace the spirit of exploration with our "Adventure Awaits" T-shirt. Made from soft, breathable cotton, it's perfect for everyday wear. Featuring an inspiring graphic, this shirt is ideal for dreamers and adventurers. Available in multiple sizes and colors. Start your journey in style!</textarea>
-                                            <div class="Polaris-TextField__Backdrop"></div>
-                                        </div>
-                                    </div>
-                                    <div style="margin-top: var(--p-space-200)">
-                                        <p class="Polaris-Text--root Polaris-Text--bodySm">Variant Input:</p>
-                                        <div style="display: flex; margin-top: var(--p-space-100);">
-                                            <label for="size" style="margin-right: var(--p-space-300);">Size:</label>
-                                            <div class="Polaris-Select Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
-                                                <select id="size" name="reattampt" class="Polaris-Select__Input" aria-invalid="false">
-                                                    <option value="">X-Large</option>
-                                                    <option value="">Large</option>
-                                                    <option selected value="">Medium</option>
-                                                    <option value="">X-Small</option>
-                                                </select>
-                                                <div class="Polaris-Select__Content" aria-hidden="true">
-                                                    <span class="Polaris-Select__SelectedOption">Medium</span>
-                                                    <span class="Polaris-Select__Icon">
-                                                        <span class="Polaris-Icon">
-                                                            <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
-                                                            </span>
-                                                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
-                                                                <path d="M10.884 4.323a1.25 1.25 0 0 0-1.768 0l-2.646 2.647a.75.75 0 0 0 1.06 1.06l2.47-2.47 2.47 2.47a.75.75 0 1 0 1.06-1.06l-2.646-2.647Z">
-                                                                </path>
-                                                                <path d="m13.53 13.03-2.646 2.647a1.25 1.25 0 0 1-1.768 0l-2.646-2.647a.75.75 0 0 1 1.06-1.06l2.47 2.47 2.47-2.47a.75.75 0 0 1 1.06 1.06Z">
-                                                                </path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                                <div class="Polaris-Select__Backdrop">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="display: flex; margin-top: var(--p-space-100);">
-                                            <label for="color" style="margin-right: var(--p-space-150);">Color</label>
-                                            <div class="Polaris-Select Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
-                                                <select id="color" name="reattampt" class="Polaris-Select__Input" aria-invalid="false">
-                                                    <option value="">White</option>
-                                                    <option value="">Red</option>
-                                                    <option selected value="">Black</option>
-                                                    <option value="">Darkblue</option>
-                                                </select>
-                                                <div class="Polaris-Select__Content" aria-hidden="true">
-                                                    <span class="Polaris-Select__SelectedOption">Black</span>
-                                                    <span class="Polaris-Select__Icon">
-                                                        <span class="Polaris-Icon">
-                                                            <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
-                                                            </span>
-                                                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
-                                                                <path d="M10.884 4.323a1.25 1.25 0 0 0-1.768 0l-2.646 2.647a.75.75 0 0 0 1.06 1.06l2.47-2.47 2.47 2.47a.75.75 0 1 0 1.06-1.06l-2.646-2.647Z">
-                                                                </path>
-                                                                <path d="m13.53 13.03-2.646 2.647a1.25 1.25 0 0 1-1.768 0l-2.646-2.647a.75.75 0 0 1 1.06-1.06l2.47 2.47 2.47-2.47a.75.75 0 0 1 1.06 1.06Z">
-                                                                </path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                                <div class="Polaris-Select__Backdrop">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="display: flex; margin-top: var(--p-space-100);">
-                                            <label for="sku" style="margin-right: var(--p-space-400);">SKU</label>
-                                            <div class="Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
-                                                <input id="sku" class="Polaris-TextField__Input" readonly value="263791" type="text" placeholder="Product SKU">
-                                                <div class="Polaris-TextField__Backdrop"></div>
-                                            </div>
-                                        </div>
-                                        <div style="display: flex; margin-top: var(--p-space-100);">
-                                            <label for="price" style="margin-right: var(--p-space-300);">Price</label>
-                                            <div class="Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
-                                                <input id="price" class="Polaris-TextField__Input" readonly value="4,600" type="text" placeholder="Product Price">
-                                                <div class="Polaris-TextField__Backdrop"></div>
-                                            </div>
-                                        </div>
-                                        <div style="display: flex; margin-top: var(--p-space-100);">
-                                            <label for="qty" style="margin-right: var(--p-space-400);">QTY</label>
-                                            <div class="Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
-                                                <input id="qty" class="Polaris-TextField__Input" value="20" type="text" placeholder="Product QTY">
-                                                <div class="Polaris-TextField__Backdrop"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Polaris-Grid-Cell Polaris-Grid-Cell--cell_6ColumnXs Polaris-Grid-Cell--cell_3ColumnSm Polaris-Grid-Cell--cell_3ColumnMd Polaris-Grid-Cell--cell_6ColumnLg Polaris-Grid-Cell--cell_6ColumnXl">
-                                    <div style="display: flex; justify-content: center; width: 100%;">
-                                        <div class="Polaris-Button--pressable">
-                                            <img alt="" width="300" style="object-fit:cover;object-position:center" src="img/nr.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; justify-content: end; width: 100%;">
-                    <div class="Polaris-TextField" style="margin-top: var(--p-space-150);">
-                        <button id="updateBtn" class="Polaris-Button Polaris-Button--pressable Polaris-Button--variantPrimary Polaris-Button--sizeMedium Polaris-Button--textAlignCenter" type="button">
-                            <span class="Polaris-Text--root Polaris-Text--bodySm Polaris-Text--medium">Update Now</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Modal -->
@@ -345,19 +223,166 @@
                 <div>
                     <div role="dialog" aria-modal="true" aria-label=":Req6:" aria-labelledby=":Req6:" tabindex="-1" class="Polaris-Modal-Dialog">
                         <div class="Polaris-Modal-Dialog__Modal">
+                            <!--<form style="overflow:Scroll;"method="get" action="">-->
+                            <!--<input type="hidden" name="_token" value="IkBzo1m7wqkc8AXWbJGhrA9amnSEq1oJaO1AJBsK" autocomplete="off">-->
+                            <div class="Polaris-Box" style="--pc-box-background: var(--p-color-bg-surface-tertiary); --pc-box-border-color: var(--p-color-border); --pc-box-border-style: solid; --pc-box-border-block-end-width: var(--p-border-width-025); --pc-box-padding-block-start-xs: var(--p-space-400); --pc-box-padding-block-end-xs: var(--p-space-400); --pc-box-padding-inline-start-xs: var(--p-space-400); --pc-box-padding-inline-end-xs: var(--p-space-400);">
+                                <div class="Polaris-InlineGrid" style="--pc-inline-grid-grid-template-columns-xs: 1fr auto; --pc-inline-grid-gap-xs: var(--p-space-400);">
+                                    <div class="Polaris-InlineStack" style="--pc-inline-stack-block-align: center; --pc-inline-stack-wrap: wrap; --pc-inline-stack-gap-xs: var(--p-space-400); --pc-inline-stack-flex-direction-xs: row;">
+                                        <h2 class="Polaris-Text--root Polaris-Text--headingMd Polaris-Text--break" id=":Req6:">Preview templates</h2>
+                                    </div>
+                                    <button class="Polaris-Button Polaris-Button--pressable Polaris-Button--variantTertiary Polaris-Button--sizeMedium Polaris-Button--textAlignCenter Polaris-Button--iconOnly close-modal" aria-label="Close" type="button" aria-pressed="false">
+                                        <span class="Polaris-Button__Icon">
+                                            <span class="Polaris-Icon">
+                                                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                    <path d="M12.72 13.78a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-2.72 2.72-2.72-2.72a.75.75 0 0 0-1.06 1.06l2.72 2.72-2.72 2.72a.75.75 0 1 0 1.06 1.06l2.72-2.72 2.72 2.72Z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
                             <div style="padding: 15px;" class="Polaris-Modal__Body Polaris-Scrollable Polaris-Scrollable--vertical Polaris-Scrollable--horizontal Polaris-Scrollable--scrollbarWidthThin" data-polaris-scrollable="true">
                                 <div class="Polaris-Modal-Section">
                                     <section class="Polaris-Box">
-                                        <div style="margin-top: -50px; display: flex; justify-content: center; width: 100%;">
-                                            <img width="300" src="img/success.gif" alt="">
+                                        <!-- edit div -->
+                                        <div id="edit-div">
+                                            <div class="Polaris-LegacyCard" style="overflow: visible; margin-top: var(--p-space-100);">
+                                                <div style="padding: var(--p-space-400);">
+                                                    <!-- row 1 -->
+                                                    <div class="Polaris-Page__Content">
+                                                        <div class="Polaris-Grid">
+                                                            <div class="Polaris-Grid-Cell Polaris-Grid-Cell--cell_6ColumnXs Polaris-Grid-Cell--cell_3ColumnSm Polaris-Grid-Cell--cell_3ColumnMd Polaris-Grid-Cell--cell_6ColumnLg Polaris-Grid-Cell--cell_6ColumnXl">
+                                                                <div>
+                                                                    <label for="title">Product Title</label>
+                                                                    <div class="Polaris-TextField Polaris-Button--pressable">
+                                                                        <input id="title" class="Polaris-TextField__Input" readonly value="Adventure Awaits T-Shirt" type="text" placeholder="Product Title">
+                                                                        <div class="Polaris-TextField__Backdrop"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-top: var(--p-space-100);">
+                                                                    <label for="description">Product Description</label>
+                                                                    <div class="Polaris-TextField Polaris-Button--pressable">
+                                                                        <textarea id="description" rows="5" class="Polaris-TextField__Input" type="text" placeholder="Product Description" readonly>Embrace the spirit of exploration with our "Adventure Awaits" T-shirt. Made from soft, breathable cotton, it's perfect for everyday wear. Featuring an inspiring graphic, this shirt is ideal for dreamers and adventurers. Available in multiple sizes and colors. Start your journey in style!</textarea>
+                                                                        <div class="Polaris-TextField__Backdrop"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-top: var(--p-space-200)">
+                                                                    <p class="Polaris-Text--root Polaris-Text--bodySm">Variant Input:</p>
+                                                                    <div style="display: flex; margin-top: var(--p-space-100);">
+                                                                        <label for="size" style="margin-right: var(--p-space-300);">Size:</label>
+                                                                        <div class="Polaris-Select Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
+                                                                            <select id="size" name="reattampt" class="Polaris-Select__Input" aria-invalid="false">
+                                                                                <option value="">X-Large</option>
+                                                                                <option value="">Large</option>
+                                                                                <option selected value="">Medium</option>
+                                                                                <option value="">X-Small</option>
+                                                                            </select>
+                                                                            <div class="Polaris-Select__Content" aria-hidden="true">
+                                                                                <span class="Polaris-Select__SelectedOption">Medium</span>
+                                                                                <span class="Polaris-Select__Icon">
+                                                                                    <span class="Polaris-Icon">
+                                                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                                                        </span>
+                                                                                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                                                            <path d="M10.884 4.323a1.25 1.25 0 0 0-1.768 0l-2.646 2.647a.75.75 0 0 0 1.06 1.06l2.47-2.47 2.47 2.47a.75.75 0 1 0 1.06-1.06l-2.646-2.647Z">
+                                                                                            </path>
+                                                                                            <path d="m13.53 13.03-2.646 2.647a1.25 1.25 0 0 1-1.768 0l-2.646-2.647a.75.75 0 0 1 1.06-1.06l2.47 2.47 2.47-2.47a.75.75 0 0 1 1.06 1.06Z">
+                                                                                            </path>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="Polaris-Select__Backdrop">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="display: flex; margin-top: var(--p-space-100);">
+                                                                        <label for="color" style="margin-right: var(--p-space-150);">Color</label>
+                                                                        <div class="Polaris-Select Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
+                                                                            <select id="color" name="reattampt" class="Polaris-Select__Input" aria-invalid="false">
+                                                                                <option value="">White</option>
+                                                                                <option value="">Red</option>
+                                                                                <option selected value="">Black</option>
+                                                                                <option value="">Darkblue</option>
+                                                                            </select>
+                                                                            <div class="Polaris-Select__Content" aria-hidden="true">
+                                                                                <span class="Polaris-Select__SelectedOption">Black</span>
+                                                                                <span class="Polaris-Select__Icon">
+                                                                                    <span class="Polaris-Icon">
+                                                                                        <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+                                                                                        </span>
+                                                                                        <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                                                            <path d="M10.884 4.323a1.25 1.25 0 0 0-1.768 0l-2.646 2.647a.75.75 0 0 0 1.06 1.06l2.47-2.47 2.47 2.47a.75.75 0 1 0 1.06-1.06l-2.646-2.647Z">
+                                                                                            </path>
+                                                                                            <path d="m13.53 13.03-2.646 2.647a1.25 1.25 0 0 1-1.768 0l-2.646-2.647a.75.75 0 0 1 1.06-1.06l2.47 2.47 2.47-2.47a.75.75 0 0 1 1.06 1.06Z">
+                                                                                            </path>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="Polaris-Select__Backdrop">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="display: flex; margin-top: var(--p-space-100);">
+                                                                        <label for="sku" style="margin-right: var(--p-space-400);">SKU</label>
+                                                                        <div class="Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
+                                                                            <input id="sku" class="Polaris-TextField__Input" readonly value="263791" type="text" placeholder="Product SKU">
+                                                                            <div class="Polaris-TextField__Backdrop"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="display: flex; margin-top: var(--p-space-100);">
+                                                                        <label for="price" style="margin-right: var(--p-space-300);">Price</label>
+                                                                        <div class="Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
+                                                                            <input id="price" class="Polaris-TextField__Input" readonly value="4,600" type="text" placeholder="Product Price">
+                                                                            <div class="Polaris-TextField__Backdrop"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="display: flex; margin-top: var(--p-space-100);">
+                                                                        <label for="qty" style="margin-right: var(--p-space-400);">QTY</label>
+                                                                        <div class="Polaris-TextField Polaris-Button--pressable" style="width: 100%;">
+                                                                            <input id="qty" class="Polaris-TextField__Input" value="20" type="text" placeholder="Product QTY">
+                                                                            <div class="Polaris-TextField__Backdrop"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Polaris-Grid-Cell Polaris-Grid-Cell--cell_6ColumnXs Polaris-Grid-Cell--cell_3ColumnSm Polaris-Grid-Cell--cell_3ColumnMd Polaris-Grid-Cell--cell_6ColumnLg Polaris-Grid-Cell--cell_6ColumnXl">
+                                                                <div style="display: flex; justify-content: center; width: 100%;">
+                                                                    <div class="Polaris-Button--pressable">
+                                                                        <img alt="" width="300" style="object-fit:cover;object-position:center" src="img/nr.png">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div style="display: flex; justify-content: center; width: 100%;">
-                                            <!-- <img width="300" src="img/success.gif" alt=""> -->
-                                            <h1 class="Polaris-Text--root Polaris-Text--heading2xl" style="margin-top: -50px;">Updated Successfully</h1>
+                                        <!-- success div -->
+                                        <div id="success-div" style="display: none;">
+                                            <div style="margin-top: -50px; display: flex; justify-content: center; width: 100%;">
+                                                <img width="250" src="img/success.gif" alt="">
+                                            </div>
+                                            <div style="display: flex; justify-content: center; width: 100%;">
+                                                <!-- <img width="300" src="img/success.gif" alt=""> -->
+                                                <h1 class="Polaris-Text--root Polaris-Text--heading2xl" style="margin-top: -50px;">Updated Successfully</h1>
+                                            </div>
                                         </div>
                                     </section>
                                 </div>
                             </div>
+                            <div class="Polaris-Box" style=" border-top: 1px solid var(--p-color-border); padding: var(--p-space-300); --pc-box-width: 100%;">
+                                <div class="Polaris-InlineStack" style="justify-content: end;">
+                                    <button style="margin-left: var(--p-space-300);" class="Polaris-Button Polaris-Button--pressable Polaris-Button--variantPrimary Polaris-Button--sizeMedium Polaris-Button--textAlignCenter close-modal" type="button">
+                                        <span class="Polaris-Text--root Polaris-Text--bodySm Polaris-Text--medium">Close</span>
+                                    </button>
+                                    <a href="#" id="save" style="margin-left: var(--p-space-300);" class="Polaris-Button Polaris-Button--pressable Polaris-Button--variantSecondary Polaris-Button--sizeMedium Polaris-Button--textAlignCenter">
+                                        <span class="Polaris-Text--root Polaris-Text--bodySm Polaris-Text--medium">Update</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--</form>-->
                         </div>
                     </div>
                 </div>
@@ -368,15 +393,6 @@
 </body>
 <script>
     $(document).ready(function() {
-        var editBtn1 = "#edit1";
-        var editBtn2 = "#edit2";
-        $(editBtn1 + ", " + editBtn2).on('click', function() {
-            if ($("#edit-div").css('display') == 'none') {
-                $("#edit-div").slideDown();
-            } else {
-                $("#edit-div").slideUp();
-            }
-        });
         $('.Polaris-Select__Input').each(function(index) {
             const selectedOption = $(this).closest('.Polaris-Select').find('.Polaris-Select__SelectedOption');
             $(this).change(function() {
@@ -384,35 +400,41 @@
             });
         });
 
-        var updateBtn = $('#updateBtn');
+        var edit1 = $('#edit1');
+        var edit2 = $('#edit2');
         var updateModal = $('#updateModal');
 
-        // Function to open modal with animation
         function openModal(modal) {
-            modal.css('display', 'block').animate({
-                opacity: 1,
-                transform: 'scale(1)'
-            }, 200, function() {
-                // Auto-hide modal after 600ms
-                setTimeout(function() {
-                    closeModal(modal);
-                    $("#edit-div").slideUp();
-                }, 1300);
+            modal.css({
+                display: 'block'
             });
         }
 
-        // Function to close modal with animation
         function closeModal(modal) {
-            modal.animate({
-                opacity: 0,
-                transform: 'scale(0.7)'
-            }, 200, function() {
-                modal.css('display', 'none');
+            modal.css({
+                display: 'none'
             });
         }
+
+
+        $('#save').on('click', function() {
+            if ($('#edit-div').css('display') == 'block') {
+                $('#edit-div').css('display', 'none');
+                $('#success-div').css('display', 'block');
+            }
+            if ($('#success-div').css('display') == 'block') {
+                setTimeout(function() {
+                    closeModal(updateModal);
+                    location.reload();
+                }, 1500);
+            }
+        });
 
         // Open modal on click update button
-        updateBtn.on('click', function() {
+        edit1.on('click', function() {
+            openModal(updateModal);
+        });
+        edit2.on('click', function() {
             openModal(updateModal);
         });
 
