@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Textareas with Delete Buttons</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+  <div class="container shadow-sm bg-white rounded-4 my-5 p-4 col-5">
+    <h2 class="mb-4 text-center">Multiple Textareas</h2>
+
+    <!-- Initial textarea field -->
+    <div class="input-group mb-3">
+      <textarea cols="30" rows="1" class="rounded form-control" aria-label="Text input"></textarea>
+      <!-- Delete button with Bootstrap classes -->
+      <button class="btn btn-danger rounded delete-btn d-none">&times;</button>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button  id="add-btn" class="btn btn-primary rounded">Add Field</button>
+  </div>
+
+  <script>
+    function addField() {
+      // Clone the initial field
+      var newField = document.querySelector('.input-group').cloneNode(true);
+      // Clear the textarea field value
+      var textareaField = newField.querySelector('textarea');
+      textareaField.value = '';
+      // Get the delete button for the new field
+      var deleteButton = newField.querySelector('.delete-btn');
+      // Remove the 'd-none' class to show the delete button
+      deleteButton.classList.remove('d-none');
+      // Append the new field to the container
+      document.querySelector('.container').appendChild(newField);
+    }
+
+    function deleteField(btn) {
+      // Remove the parent input group
+      btn.closest('.input-group').remove();
+    }
+    // Add event listener to the delete buttons
+    document.addEventListener('click', function(event) {
+      if (event.target && event.target.classList.contains('delete-btn')) {
+        deleteField(event.target);
+      }
+    });
+    // Add event listener to the add field button
+    document.getElementById('add-btn').addEventListener('click', function() {
+      addField();
+    });
+  </script>
+</body>
+
+</html>
